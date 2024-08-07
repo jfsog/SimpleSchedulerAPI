@@ -1,1 +1,10 @@
-spring.application.name=SimpleSchedulerAPI
+spring: 
+  application:
+    name: SimpleSchedulerAPI
+  datasource:
+    url: jdbc:h2:mem:Scheduler_DB
+    username: user
+    password: passw
+  data:
+    rest:
+      base-path: /api

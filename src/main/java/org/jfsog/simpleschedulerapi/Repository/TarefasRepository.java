@@ -1,2 +1,4 @@
-package org.jfsog.simpleschedulerapi.Repository;public class TarefasRepository {
+package org.jfsog.simpleschedulerapi.Repository;
+
+public class TarefasRepository {
 }
