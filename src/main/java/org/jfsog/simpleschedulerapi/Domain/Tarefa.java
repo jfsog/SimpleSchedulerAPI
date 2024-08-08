@@ -22,9 +22,12 @@ public class Tarefa {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @DateTimeFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSX")
-    private LocalDateTime data;
+    private LocalDateTime dataHoraInicio;
     private String descricao;
     @NotNull
     @Multiple(valor = 30, max = 120)
     private Long duracao;
+    public LocalDateTime getDataHoraFim() {
+        return dataHoraInicio.plusMinutes(duracao);
+    }
 }
